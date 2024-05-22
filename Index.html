@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS and JavaScript Tricks Showcase</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>CSS and JavaScript Tricks Showcase</h1>
+    </header>
+    <div class="container mt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Flexbox Layout</h2>
+                <div class="d-flex justify-content-around align-items-center bg-dark text-white p-4">
+                    <div class="p-3 bg-secondary rounded">Item 1</div>
+                    <div class="p-3 bg-secondary rounded">Item 2</div>
+                    <div class="p-3 bg-secondary rounded">Item 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Grid Layout</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="p-4 bg-secondary text-white rounded">Item 1</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="p-4 bg-secondary text-white rounded">Item 2</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="p-4 bg-secondary text-white rounded">Item 3</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="p-4 bg-secondary text-white rounded">Item 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">CSS Animation</h2>
+                <div class="animate-box mx-auto my-4"></div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">CSS Transitions</h2>
+                <div class="transition-box mx-auto my-4"></div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Pseudo-elements</h2>
+                <div class="pseudo-element-box mx-auto my-4">Hover over me</div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">CSS Variables</h2>
+                <div class="variable-box mx-auto my-4">This box uses CSS variables</div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Media Queries</h2>
+                <div class="media-query-box mx-auto my-4">Resize the window to see the effect</div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">JavaScript Functions</h2>
+                <button id="toggleButton" class="btn btn-primary mb-3">Toggle Class</button>
+                <div id="toggleBox" class="toggle-box">Click the button to toggle class</div>
+
+                <button id="changeContentButton" class="btn btn-primary mb-3">Change Content</button>
+                <div id="contentBox" class="content-box mb-3">Original Content</div>
+
+                <button id="openModalButton" class="btn btn-primary mb-3">Open Modal</button>
+                <div id="modal" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal Window</h5>
+                                <button type="button" class="close" id="closeModalButton">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This is a modal window.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown mb-3">
+                    <button id="dropdownButton" class="btn btn-primary dropdown-toggle" type="button">
+                        Dropdown Menu
+                    </button>
+                    <div id="dropdownContent" class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+
+                <button id="incrementButton" class="btn btn-primary mb-3">Increment Counter</button>
+                <div id="counterBox" class="counter-box mb-3">0</div>
+
+                <form id="sampleForm" class="mb-3">
+                    <h3>Form Validation</h3>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div id="formMessage" class="form-message mt-2"></div>
+                </form>
+
+                <h3>Live Search Filter</h3>
+                <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search...">
+                <ul id="searchList" class="list-group">
+                    <li class="list-group-item">Apple</li>
+                    <li class="list-group-item">Banana</li>
+                    <li class="list-group-item">Cherry</li>
+                    <li class="list-group-item">Date</li>
+                    <li class="list-group-item">Fig</li>
+                    <li class="list-group-item">Apple</li>
+                    <li class="list-group-item">Banana</li>
+                    <li class="list-group-item">Cherry</li>
+                    <li class="list-group-item">Date</li>
+                    <li class="list-group-item">Fig</li>
+                    <li class="list-group-item">Apple</li>
+                    <li class="list-group-item">Banana</li>
+                    <li class="list-group-item">Cherry</li>
+                    <li class="list-group-item">Date</li>
+                    <li class="list-group-item">Fig</li>
+                </ul>
+
+                <h3 class="mt-4">Color Picker</h3>
+                <input type="color" id="colorPicker" class="form-control mb-3">
+                <div id="colorBox" class="color-box">Pick a color</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
