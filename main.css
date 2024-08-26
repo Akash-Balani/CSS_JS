@@ -12,6 +12,38 @@ body {
   background-position: top center;
 }
 
+/* Hero Area Styles */
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  color:black;
+}
+
+/* Weather Forecast Card Styles */
+.forecast-cards-bg {
+  background-color: white;
+}
+
+.forecast-card {
+  width: 12rem;
+}
+
+/* Weather Icon sizes */
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+  .forecast-card {
+    width: 100%;
+  }
+}
+
 /* navbar */
 
 .menu {
