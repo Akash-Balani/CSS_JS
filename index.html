@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- advance linked -->
+
+    <!--    Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--    Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css    ">
+  </head>
+  <body>
+    <!-- <div class="app-wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city..."
+        />
+      </header>
+      <main>
+        <div class="maincard">
+
+          <section class="location">
+            <div class="city">Weather, City</div>
+            <div class="date">Wednesday 22 July 2020</div>
+          </section>
+          <div class="current">
+            <div class="temp">0<span>°c</span></div>
+            <div class="weather">Weather</div>
+            <div class="hi-low">0°c / 0°c</div>
+          </div>
+
+        </div>
+      </main>
+    </div> -->
+
+    <div class="menu" onclick="this.classList.toggle('open')">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+    </div>
+
+    <div class="main-container">
+      <div class="left-container">
+        <div class="upleft-container">
+          <!-- <header>
+            <input
+              type="text"
+              autocomplete="off"
+              class="search-box"
+              placeholder="Search for a city..."
+            />
+          </header> -->
+          <!-- Search Form container -->
+      
+                <form class="p-3 mr-sm-2" id="search-form">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="search-input"
+                      placeholder="Enter your city name"
+                    />
+                  </div>
+
+                  <div class="d-grid gap-2">
+                    <button
+                      class="btn btn-primary"
+                      type="submit"
+                      id="search-btn"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </form>
+        </div>
+        <div class="downleft-container">
+          <div id="weather-info-today">
+          </div>
+          <!-- <div class="maincard">
+            <section class="location">
+              <div class="city">Weather, City</div>
+              <div class="date">Wednesday 22 July 2020</div>
+              <div class="current">
+                <div class="temp">0<span>°c</span></div>
+                <div class="weather">Weather</div>
+                <div class="hi-low">0°c / 0°c</div>
+              </div>
+            </section>
+          </div> -->
+        </div>
+      </div>
+      <div class="right-container">
+        <!-- <div id="weather-info-today">
+        </div> -->
+            <div id="weather-info-container">
+              <!-- current data renders here-->
+
+              <!-- 5 day forecast data renders here-->
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--jQuery Script-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--Moment.js-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="main.js"></script> -->
+    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>
